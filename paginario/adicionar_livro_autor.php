@@ -271,7 +271,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <body>
     <div class="background"></div>
     <div class="header">
-        <h1>📚 Publicar Seu Livro</h1>
+        <h1> Publicar Seu Livro</h1>
         <p>Compartilhe sua obra com o mundo através da Biblioteca Paginário</p>
     </div>
     <main>
