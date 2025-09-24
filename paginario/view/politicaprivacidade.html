@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Política de Privacidade - Biblioteca Virtual</title>
+<link href="../img">
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #e1c9a7;
+        color: #3d2815;
+        line-height: 1.6;
+    }
+
+        .menu-icon {
+        position: absolute;
+        left: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+    .menu-icon img {
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+    }
+
+    .side-menu {
+        position: fixed;
+        top: 0;
+        left: -250px;
+        width: 250px;
+        height: 100%;
+        background-color: #86541c;
+        padding-top: 60px;
+        box-shadow: 2px 0 5px rgba(0,0,0,0.5);
+        transition: left 0.3s ease;
+        z-index: 1000;
+    }
+
+    .side-menu ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .side-menu ul li {
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    .side-menu ul li a {
+        color: #eab97f;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1.1em;
+    }
+
+.side-menu ul li a:hover {
+  color: #ffffff;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+    .side-menu.open {
+        left: 0;
+    }
+
+    .close-icon {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .close-icon img {
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .main-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+  background: #86541c; 
+        color: #fff;
+        padding: 12px 20px;
+    }
+
+    .main-header h1 {
+        font-size: 1.4rem;
+        letter-spacing: 1px;
+    }
+
+    .content {
+        max-width: 800px;
+        margin: 40px auto;
+        background-color: #fff;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .content h2 {
+        margin-bottom: 15px;
+        color: #5b3d1f;
+    }
+
+    .content p {
+        margin-bottom: 12px;
+    }
+
+    .main-footer {
+        text-align: center;
+        padding: 14px 0;
+  background: #86541c;
+        color: #fff;
+        font-size: 0.9rem;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
+    .main-footer a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 6px;
+    }
+</style>
+</head>
+<body>
+
+<header class="main-header">
+    <h1>Política de Privacidade</h1>
+<div class="menu-icon">   
+          <img src="img/component 1.svg" alt="Abrir Menu" />
+        </div>
+    </header>
+    <nav id="side-menu" class="side-menu">
+          <div class="close-icon">
+    <img src="img/component 1.svg" alt="Fechar Menu"/>
+  </div>
+    <ul>
+        <li><a href="inicio.php" style="color: antiquewhite;">Página Inicial</a></li>
+        <li><a style="color: peru;">------------------------------</a></li>
+        <li><a style="color: antiquewhite;">Filtros</a></li>
+        <li><a href="../genero.php">Gênero</a></li>
+        <li><a href="../autores.php">Autor</a></li>
+        <li><a href="../editora.php">Editora</a></li>
+        <li><a href="../faixaetaria.php">Faixa Etária</a></li>
+        <li><a style="color: peru;">------------------------------</a></li>
+        <li><a href="../solicitacao.php" style="color: antiquewhite;">Solicitação de livros</a></li>
+        <li><a style="color: peru;">------------------------------</a></li>
+        <li><a href="meuperfil.php" style="color: antiquewhite;">Meu Perfil</a></li>
+    </ul>
+</nav>
+
+<main class="content">
+    <h2>Bem-vindo à Biblioteca Virtual</h2>
+    <p>A gente leva a sua privacidade a sério.</p>
+    <p>Quando você se cadastra, coletamos apenas o necessário: seu nome de usuário, senha, e-mail e informações sobre o livro que deseja registrar.</p>
+    <p>Esses dados servem só para manter seu cadastro e organizar a biblioteca. Não vendemos nem compartilhamos com terceiros, a menos que seja exigido por lei.</p>
+    <p>Você pode pedir para alterar ou excluir seus dados quando quiser. Se mudarmos esta política.</p>
+</main>
+ 
+<script>
+  const menuIcon = document.querySelector('.menu-icon');
+const sideMenu = document.getElementById('side-menu');
+const closeIcon = document.querySelector('.close-icon');
+
+menuIcon.addEventListener('click', () => {
+  sideMenu.classList.add('open'); 
+});
+
+closeIcon.addEventListener('click', () => {
+  sideMenu.classList.remove('open');
+});
+
+</script>
+
+</body>
+</html>
